@@ -10,6 +10,7 @@ echo Abrindo o servidor e o jogo...
 if exist "node_modules\.bin\vite.cmd" (
     cmd /c "node_modules\.bin\vite.cmd" --open
 ) else (
+    npn install
     cmd /c npx vite --open
 )
 
